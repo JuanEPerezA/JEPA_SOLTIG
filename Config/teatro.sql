@@ -32,7 +32,7 @@ USE `teatro`;
 CREATE TABLE `obra` (
   `cod_obra` int(11) NOT NULL,
   `nombre` varchar(255) NOT NULL,
-  `fecha_obra` date NOT NULL,
+  `fecha_obra` datetime NOT NULL,
   `aforo` int(11) NOT NULL,
   `disponibles` int(11) NOT NULL,
   `sala` varchar(255) NOT NULL
@@ -55,7 +55,7 @@ CREATE TABLE `ventas` (
   `numero_venta` int(11) NOT NULL,
   `cod_obra` int(11) NOT NULL,
   `comprador` int(11) NOT NULL,
-  `fecha_compra` date NOT NULL
+  `fecha_compra` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --

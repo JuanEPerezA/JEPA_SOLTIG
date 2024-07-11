@@ -6,7 +6,7 @@
 			$this->conn = BD::getInstance()->getConnection();
 		}
 
-		public function getObrasDisponibles() {
+		public function listarObrasDisponibles() {
 			$today = date('Y-m-d');
 			$sql = "SELECT * FROM OBRA WHERE disponibles > 0 AND fecha_obra > '$today'";
 			$result = $this->conn->query($sql);
@@ -21,7 +21,7 @@
 			return $obras;
 		}
 
-		public function updateDisponibles($cod_obra) {
+		public function actualizarDisponibilidad($cod_obra) {
 			$sql = "UPDATE OBRA SET disponibles = disponibles - 1 WHERE cod_obra = ?";
 			$stmt = $this->conn->prepare($sql);
 			$stmt->bind_param("i", $cod_obra);
