@@ -54,7 +54,7 @@ INSERT INTO `obra` (`cod_obra`, `nombre`, `fecha_obra`, `aforo`, `disponibles`, 
 CREATE TABLE `ventas` (
   `numero_venta` int(11) NOT NULL,
   `cod_obra` int(11) NOT NULL,
-  `comprador` varchar(255) NOT NULL,
+  `comprador` int(11) NOT NULL,
   `fecha_compra` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 

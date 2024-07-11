@@ -21,7 +21,7 @@
                 CREATE TABLE `VENTAS` (
                     `numero_venta` int(11) NOT NULL AUTO_INCREMENT,
                     `cod_obra` int(11) NOT NULL,
-                    `comprador` varchar(255) NOT NULL,
+                    `comprador` int(11) NOT NULL,
                     `fecha_compra` date NOT NULL,
                     PRIMARY KEY (`numero_venta`),
                     KEY `cod_obra` (`cod_obra`),
@@ -43,3 +43,4 @@
 NOTAS: 
     - Se implementó la opción de "CREAR OBRAS", PARA UN FUNCIONAMIENTO MÁS COMPLETO DEL SISTEMA.
     - Se usó bootstrap para los estilos.
+    - Proyecto completo en git: https://github.com/JuanEPerezA/JEPA_SOLTIG

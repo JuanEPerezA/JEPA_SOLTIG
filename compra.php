@@ -25,13 +25,12 @@
 	}
 ?>
 
-
     <h1 class="text-center">Comprar Entrada</h1>
     <form action="compra.php" method="POST">
         <div class="input-group mb-3">
         <input type="hidden" name="cod_obra" value="<?php echo $cod_obra; ?>">
-            <span class="input-group-text text-bg-dark" for="comprador" id="comprador">Identificador del Comprador</span>
-            <input type='text' id='comprador' name='comprador' class='form-control' required/>
+            <span class="input-group-text text-bg-dark" for="comprador" id="comprador">Identificación del Comprador</span>
+            <input type='number' id='comprador' name='comprador' class='form-control' required/>
             <button type="submit" class="btn btn-success">Comprar</button>
         </div>
     </form>
